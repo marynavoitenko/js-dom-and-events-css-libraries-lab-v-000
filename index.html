@@ -4,46 +4,55 @@
     <title>HTML/CSS Lab</title>
     <link rel="stylesheet" href="https://unpkg.com/basscss@8.0.1/css/basscss.min.css">
     <style>
-      .flex > div {
-        width: 600px;
-        margin: 10px auto;
-        border-bottom: 1px solid #aaa;
-      }
       .muted {
         color: #999;
         font-size: 0.7em;
       }
-      img {
-        width: 60px;
-        height: 60px;
-        float: left;
-        margin-right: 10px;
-      }
-      .name {
-        font-size: 0.8em;
-        font-weight: bold;
-      }
     </style>
   </head>
-  <body>
-    <div class='flex flex-column'>
-      <div>
-        <span class='name'>Twitter Guy</span>
-        <span class='muted'>@TwitTwit - Apr 15</span>
-        <img src="https://i1.sndcdn.com/avatars-000422896016-0nr0ce-t500x500.jpg">
-        <p>Born in the high north of Germany and now a Berlin resident<p>
+  <body class="flex justify-center">
+    <div class="mt4" style="width: 600px;">
+      <div class="flex border-bottom mb2">
+        <div>
+          <img class="rounded mr2" src="https://i1.sndcdn.com/avatars-000422896016-0nr0ce-t500x500.jpg" alt="Twitter Guy" style="width: 50px">
+        </div>
+        <div class="flex flex-column">
+          <small>
+            <strong>Twitter Guy</strong>
+            <span class="muted">@TwitTwit - Apr 15</span>
+          </small>
+          <p>
+            Born in the high north of Germany and now a Berlin resident
+          </p>
+        </div>
       </div>
-      <div>
-        <span class='name'>Me and Myself</span>
-        <span class='muted'>@HeyItsMe - Apr 7</span>
-        <img src="https://f4.bcbits.com/img/0012399515_10.jpg">
-        <p>Aera first appeared on the electronic music map when he established his own Aleph Music label back in 2010</p>
+      <div class="flex border-bottom mb2">
+        <div>
+          <img class="rounded mr2" src="https://f4.bcbits.com/img/0012399515_10.jpg" alt="Me and Myself" style="width: 50px">
+        </div>
+        <div class="flex flex-column">
+          <small>
+            <strong>Me and Myself</strong>
+            <span class="muted">@HeyItsMe - Apr 7</span>
+          </small>
+          <p>
+            Aera first appeared on the electronic music map when he established his own Aleph Music label back in 2010
+          </p>
+        </div>
       </div>
-      <div>
-        <span class='name'>Ralf Schmidt</span>
-        <span class='muted'>@Handle - Mar 1</span>
-        <img src="https://geo-media.beatport.com/image/10aefbac-5cfa-41e0-aae0-4cf03c9c99a7.jpg">
-        <p>Aera was able to lay out his very own musically topography on the cutting edges between house, psychedelia and breakbeats</p>
+      <div class="flex mb2">
+        <div>
+          <img class="rounded mr2" src="https://geo-media.beatport.com/image/10aefbac-5cfa-41e0-aae0-4cf03c9c99a7.jpg" alt="Ralf Schmidt" style="width: 50px">
+        </div>
+        <div class="flex flex-column">
+          <small>
+            <strong>Ralf Schmidt</strong>
+            <span class="muted">@Handle - Mar 1</span>
+          </small>
+          <p>
+            Aera was able to lay out his very own musically topography on the cutting edges between house, psychedelia and breakbeats
+          </p>
+        </div>
       </div>
     </div>
   </body>
